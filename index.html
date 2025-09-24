@@ -1,0 +1,219 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amelsghairi — Data Analyst</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* Animation pour le nom */
+    .animated-name {
+      display: inline-block;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-15px);}
+      60% {transform: translateY(-8px);}
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem;
+      background-color: #fff;
+    }
+    header img.profile {
+       width: 134px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      
+    }
+    header h1 {
+      margin: 0.5rem 0;
+      font-size: 2.5rem;
+    }
+    header p.tagline {
+      font-size: 1.25rem;
+      color: #555;
+    }
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .project-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .project-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+    .project-card .content {
+      padding: 1rem;
+      flex: 1;
+    }
+    .project-card .content h3 {
+      margin: 0 0 0.5rem 0;
+    }
+    .project-card .content p {
+      flex: 1;
+      color: #555;
+    }
+    .project-card .content a {
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: 600;
+    }
+      footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <img class="profile" src="image/amel.jpg" alt="Ta Photo">
+  <h1><span class="animated-name text-primary">Amelsghairi</span> — Data Analyst</h1>
+  <p class="tagline">Spécialiste en collecte, intégration et analyse de données. Expérience avec Python, SQL Server, SSIS et Power BI..</p>
+</header>
+  
+<section id="about">
+  <h2>À propos de moi</h2>
+  <p>Je suis <strong>Amelsghairi</strong>, Passionnée par la donnée,<em>j’aime transformer des fichiers bruts en informations exploitables.</em>. Grâce à mes compétences en Python, SQL et Power BI, je conçois des solutions allant de l’automatisation des flux de données jusqu’à la visualisation claire et stratégique.</p>
+</section>
+
+<section id="projects">
+  <h2>Projets récents</h2>
+  <div class="projects">
+    <div class="project-card">
+      <img src="image/screenshot-projet1.jpg" alt="Projet 1">
+      <div class="content">
+        <h3>Collecte et nettoyage des données laitières en France</h3>
+        <p>Scraping de données liées au secteur laitier en France à l’aide de Python, puis nettoyage, transformation et intégration des données avec SSIS avant stockage dans SQL Server. — Outils : Python, SSIS, SQL Server.</p>
+        <a href="https://github.com/Amel-sgh/sql_laitiere/blob/main/laitiere.sql" target="_blank">Voir le code / détails</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="image/screenshot-projet2.PNG" alt="Projet 2">
+      <div class="content">
+        <h3> Analyse des données laitières en France</h3>
+        <p>Conception et mise en place d’un data warehouse pour analyser les données laitières en France.</p>
+        <a href="https://github.com/Amel-sgh/datawarehouse-laitier" target="_blank">Voir le code / détails</a>
+      </div>
+    </div>
+      <div class="project-card">
+      <img src="image/screenshot-projet3.jpg" alt="Projet 2">
+      <div class="content">
+        <h3>Visualisation des données laitières en France</h3>
+        <p>Analyse descriptive, tendances, visualisation. Utilisation de Power BI </p>
+        <a href="https://github.com/Amel-sgh/powerbi-dashboards-laitiere" target="_blank">Voir le code / détails</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="image/screenshot-projet5.jpg" alt="Projet 2">
+      <div class="content">
+        <h3> Formation pratique Power BI</h3>
+        <p>Réalisation d’un projet pratique basé sur une formation YouTube afin de renforcer mes compétences en visualisation et en analyse de données avec Power BI.
+
+                Étapes : construction de tableaux de bord, KPIs, exploration des indicateurs.
+
+                  Outils : Power BI.</p>
+        <a href="https://github.com/Amel-sgh/practice-power-bi-alex-youtube" target="_blank">Voir le code / détails</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="image/screenshot-projet4.jpg" alt="Projet 2">
+      <div class="content">
+        <h3> Formation avancée Power BI (Udemy)</h3>
+        <p>Participation à une formation avancée sur Udemy pour approfondir mes compétences en modélisation, DAX et création de tableaux de bord interactifs.
+
+             Étapes : exercices pratiques, cas d’usage réels, optimisation des rapports.
+
+         Outils : Power BI.</p>
+        <a href="https://github.com/Amel-sgh/formation_power_bi" target="_blank">Voir le code / détails</a>
+      </div>
+    </div>
+     <div class="project-card">
+      <img src="image/screenshot-projet6.jpg" alt="Projet 2">
+      <div class="content">
+        <h3>Web Scraping – Marché laitier en France</h3>
+        <p>
+        Outils : Python et bibliothèques (Requests, BeautifulSoup, Pandas)</p>
+        <a href="https://github.com/Amel-sgh/scraping_entreprises_laitieres/tree/main/entreprises_laitieres" target="_blank">Voir le code / détails</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="image/screenshot-projet7.jpg" alt="Projet 2">
+      <div class="content">
+        <h3> Projet-machine-learning</h3>
+        <p>Application du clustering et de la classification afin de dégager des segments significatifs et de prédire des comportements utiles à la prise de décision
+
+        </p>
+        <a href="https://github.com/Amel-sgh/project-machine-learning" target="_blank">Voir le code / détails</a>
+      </div>
+    </div>
+    <!-- ajoute autant de cartes que nécessaire -->
+  </div>
+</section>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email : <a href="mailto:amel.sghairi95@gmail.com">amel.sghairi95@gmail.com</a></p>
+  <p>GitHub : <a href="https://github.com/Amel-sgh" target="_blank">Amel-sgh</a></p>
+  <p>LinkedIn : <a href="https://www.linkedin.com/in/amel-sghairi-85a765356/" target="_blank">AMEL SGHAIRI</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Amelsghairi — Portfolio Data Analyst — 
+</footer>
+<!-- Contenu reste pareil : about, projects, skills, contact... -->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
